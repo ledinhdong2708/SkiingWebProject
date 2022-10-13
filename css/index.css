@@ -22,15 +22,34 @@ body{
     background-color: white;
     height: 150px;
 }
+.logo-nav{
+    color: rgb(199, 166, 139); 
+    font-size: 4rem; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 0 0 50px; 
+    text-align: center; 
+    text-shadow: 1px 1px 2px #082b34;
+    text-decoration: none;
+    margin-left: 50%;
+}
 .nav-items{
     text-decoration: none;
     transition: 0.5s;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-left: 5px;
     margin-right: 5px; 
     font-family: 'Mr Dafoe';
     color: black;
+}
+.search-input{
+    border: none;
+    padding-left: 5px;
+    outline: 0;
+    border-bottom: 2px solid;
+    transform: translateX(100%);
+    display: none;
 }
 .nav-scoll{
     background-color: black;
@@ -40,28 +59,19 @@ body{
     height: 100px;
     top: 0;
 }
-.nav-scoll-black{
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    margin-top: 0;
-    height: 100px;
-    top: 0;
-}
+
 .black{
     color: black;
 }
 
 
-.light-mode{
+.dark-mode{
     background-color: black;
 }
-.light-mode header{
+.dark-mode header{
     background-color: black;
 }
-.light-mode .nav-items{
-    color: black;
-}
-.light-mode .nav-scoll{
+
+.dark-mode .nav-scoll{
     background-color: white;
 }
