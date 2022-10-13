@@ -1,0 +1,67 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+body{
+    background-color: white;
+    height: 3000px;
+    transition: 1s;
+}
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: white;
+    height: 150px;
+}
+.nav-items{
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px; 
+    font-family: 'Mr Dafoe';
+    color: black;
+}
+.nav-scoll{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    height: 100px;
+    top: 0;
+}
+.nav-scoll-black{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    height: 100px;
+    top: 0;
+}
+.black{
+    color: black;
+}
+
+
+.light-mode{
+    background-color: black;
+}
+.light-mode header{
+    background-color: black;
+}
+.light-mode .nav-items{
+    color: black;
+}
+.light-mode .nav-scoll{
+    background-color: white;
+}
