@@ -3,8 +3,8 @@ window.onscroll = function () { scollNavBar() };
 
 function scollNavBar() {
 
-    if(document.body.className == 'dark-mode'){
-        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    if (document.body.className == 'dark-mode') {
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
             document.querySelector('.header').classList.add('nav-scoll')
             document.querySelectorAll('.nav-items').forEach((items) => {
                 items.style.color = 'black'
@@ -18,8 +18,8 @@ function scollNavBar() {
         }
     }
 
-    else{
-        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    else {
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
             document.querySelector('.header').classList.add('nav-scoll')
             document.querySelectorAll('.nav-items').forEach((items) => {
                 items.style.color = 'white'
@@ -41,13 +41,13 @@ function changeBackgroundColor() {
 }
 
 
-function setColor(){
-    if(document.body.className == 'dark-mode'){
+function setColor() {
+    if (document.body.className == 'dark-mode') {
         document.querySelectorAll('.nav-items').forEach((items) => {
             items.style.color = 'white'
         })
     }
-    else{
+    else {
         document.querySelectorAll('.nav-items').forEach((items) => {
             items.style.color = 'black'
         })
@@ -56,13 +56,13 @@ function setColor(){
 
 function setColorNavscoll() {
     var header = document.querySelector('.header')
-    if(header.className == 'header nav-scoll'){
-        if(document.body.className == 'dark-mode'){
+    if (header.className == 'header nav-scoll') {
+        if (document.body.className == 'dark-mode') {
             document.querySelectorAll('.nav-items').forEach((items) => {
                 items.style.color = 'black'
             })
         }
-        else{
+        else {
             document.querySelectorAll('.nav-items').forEach((items) => {
                 items.style.color = 'white'
             })
