@@ -1,0 +1,93 @@
+.container-weather {
+    display: flex;
+    justify-content: space-around;
+}
+
+.weather-box {
+    background-color: white;
+    background-image: url(/img/Cool\ Sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 30rem;
+    box-shadow: 0 0 5px 0 #b7adad;
+}
+.search-city{
+    margin-top: 1rem;
+    padding-left: 10px;
+    border: 0;
+    padding: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 1px solid #eee;
+    font: inherit;
+    font-size: 14px;
+    line-height: 30px; 
+    outline: 0;
+    border-bottom-color: #665856;
+}
+.city-country {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.city-country p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 0px rgb(0 0 0 / 20%);
+}
+
+.date-time-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.date-time {
+    text-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+}
+
+.temperature-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 30%;
+    margin-top: 2rem;
+}
+
+.temperature {
+    font-weight: bold;
+    text-shadow: 5px 5px 0px rgb(0 0 0 / 20%);
+    font-size: 5rem;
+}
+
+.weather-condition-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.weather-condition {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 20%);
+}
+
+.sub-weather {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
