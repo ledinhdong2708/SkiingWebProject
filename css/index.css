@@ -7,7 +7,6 @@
 body {
     background-color: white;
     transition: 1s;
-    height: 20000px;
 }
 
 .content-length {
@@ -22,25 +21,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* filter: grayscale(100%) */
 }
-
-/* .container::before {
-    content: "";
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    opacity: 0.5;
-    background-color: white;
-} */
-
 .header {
     display: flex;
     align-items: center;
     transition: 0.5s;
-    /* background-color: rgb(255, 255, 255); */
     height: 150px;
     width: 100vw;
 }
@@ -153,41 +138,45 @@ body {
 
 .cards-content h2 {
     padding-top: 3rem;
+    padding-left: 1%;
     font-weight: bold;
     color: #002395;
 }
 
-.feed-cards-content {
+.first-card-article{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .cards-article {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
 }
 
-.cards-article:nth-child(1),
-.cards-article:nth-child(2) {
-    width: 50%;
+
+.cards-article img{
+    width: inherit;
+    height: 75%;
+    box-shadow: 0 0 10px 2px #b7adad;
 }
 
-.cards-article:nth-child(1) img,
-.cards-article:nth-child(2) img {
-    width: 95%;
-    height: 20rem;
-}
+
 
 .article-description {
     position: relative;
-    width: 95%;
+    width: inherit;
     height: 10rem;
     background-color: white;
     font-size: 14px;
     font-weight: bold;
     color: #012295;
+    box-shadow: 0 0 10px 2px #b7adad;
 }
 
 .article-description p {
@@ -201,4 +190,48 @@ body {
     font-size: 12px;
     font-weight: lighter;
     padding-bottom: 5px;
+}
+
+footer{
+    margin-top: 10rem;
+}
+.footer-container{
+    height: 15rem;
+    background-color: white;
+    border-top:1px solid rgb(168, 162, 162);
+}
+.donors{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.donors img{
+    height: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.operating-system{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.operating-system i{
+    padding: 1rem;
+    color: #CBCBCB;
+}
+.footer-list{
+    display: flex;
+    justify-content: center;
+}
+.footer-list a{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+.footer-container p{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 10px;
+    color: #CBCBCB;
 }
