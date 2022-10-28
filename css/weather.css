@@ -1,22 +1,30 @@
 .container-weather {
-    display: flex;
-    justify-content: space-around;
-}
-
-.weather-box {
-    background-color: white;
-    background-image: url(/img/Cool\ Sky.jpg);
+    background-image: url(/img/cloud.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-box {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20%;
-    height: 30rem;
-    box-shadow: 0 0 5px 0 #b7adad;
+    border-radius: 5%;
+    width: 50%;
+    height: fit-content;
+    background: #000000d0;
 }
-.search-city{
-    margin-top: 1rem;
+
+.search-box {
+    margin-top: 2rem;
+    position: relative;
+    width: 90%;
+}
+
+.search-city {
     padding-left: 10px;
     border: 0;
     padding: 0;
@@ -25,30 +33,75 @@
     border-bottom: 1px solid #eee;
     font: inherit;
     font-size: 14px;
-    line-height: 30px; 
+    line-height: 30px;
     outline: 0;
     border-bottom-color: #665856;
+    color: white;
+    width: 100%;
 }
+
+.search-label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: rgb(102, 99, 99);
+}
+
+.shake-message {
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.change-position {
+    color: white;
+    font-size: 16px;
+    top: -15px;
+    transition: 1s;
+}
+
 .city-country {
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
 }
 
 .city-country p {
+    color: white;
     font-size: 1.8rem;
     font-weight: bold;
-    text-shadow: 3px 3px 0px rgb(0 0 0 / 20%);
 }
 
 .date-time-box {
     display: flex;
     justify-content: center;
-    padding-top: 0.5rem;
 }
 
 .date-time {
-    text-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+    color: white;
 }
 
 .temperature-box {
@@ -57,26 +110,24 @@
     align-items: center;
     width: 50%;
     height: 30%;
-    margin-top: 2rem;
 }
 
 .temperature {
+    color: white;
     font-weight: bold;
-    text-shadow: 5px 5px 0px rgb(0 0 0 / 20%);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .weather-condition-box {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
 }
 
 .weather-condition {
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5rem;
-    text-shadow: 2px 2px 0px rgb(0 0 0 / 20%);
 }
 
 .sub-weather {
@@ -90,4 +141,9 @@
     flex-direction: column;
     align-items: center;
     padding: 0px 20px 0px 20px;
+}
+
+.icon-box p,
+.icon-box i {
+    color: white;
 }
