@@ -19,7 +19,7 @@ function initMap(latitude, longitude) {
     function lele() {
         navigator.geolocation.getCurrentPosition((position5m) => {
             flightPlanCoordinates.push({ lat: position5m.coords.latitude, lng: position5m.coords.longitude })
-            console.log(123)
+            console.log('lat' + Math.random() + ';lon ' + Math.random());
             const flightPath = new google.maps.Polyline({
                 path: flightPlanCoordinates,
                 geodesic: true,
@@ -31,17 +31,7 @@ function initMap(latitude, longitude) {
         })
     }
 
-
-
-
-
 }
-
-// function getLocationEvery5m() {
-//     navigator.geolocation.getCurrentPosition(function getLocation5m(position5m) {
-//     })
-
-// }
 
 
 
