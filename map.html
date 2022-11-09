@@ -1,23 +1,228 @@
 <html>
 
 <head>
-    <title>Simple Map</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="/css/map.css" />
+  <title>Simple Map</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" href="/css/map.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <script src="https://kit.fontawesome.com/8609b9cfc7.js" crossorigin="anonymous"></script>
+  <script src="/js/index.js"></script>
+
 </head>
 
 <body>
 
-    <h3>My Google Maps Demo</h3>
+  <header class="header">
+    <!-- <div class="nav-left">
+        <button type="text" onclick="changeBackgroundColor()">Home!</button>
+    </div> -->
+    <div class="logo">
+      <a href="" class="logo-nav">D&D</a>
+    </div>
+    <div class="nav-reponsive" onclick="openNav()">
+      <i class="fa-solid fa-bars"></i>
+      <div class="nav-center-reponsive">
+        <a href="/weather.html" class="nav-items">SNOW REPORT</a>
+        <a href="/map.html" class="nav-items">TRACK AND VIEWS</a>
+        <a href="" class="nav-items">ALPINE </a>
+        <a href="" class="nav-items">FREESTYLE & FREESKI</a>
+        <a href="" class="nav-items">SNOWBOARD</a>
+        <a href="" class="nav-items">PARA </a>
+        <a href="/login.html" class="nav-items">LOGIN</a>
+      </div>
+    </div>
+    <div class="nav-center">
+      <a href="/weather.html" class="nav-items">SNOW REPORT</a>
+      <a href="/map.html" class="nav-items">TRACK AND VIEWS</a>
+      <a href="" class="nav-items">ALPINE </a>
+      <a href="" class="nav-items">FREESTYLE & FREESKI</a>
+      <a href="" class="nav-items">SNOWBOARD</a>
+      <a href="" class="nav-items">PARA </a>
+      <a href="/login.html" class="nav-items">LOGIN</a>
+    </div>
+    <div class="search">
+      <i class="fa fa-search logo-search nav-items"></i>
+      <input type="text" placeholder="Search" class="search-input">
+    </div>
+
+  </header>
+
+  <h1 class="map-title">My Google Maps Demo</h1>
+  <div class="map-container">
     <div id="map"></div>
+  </div>
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx0BLLb64KGVX2Einy0LTPKW_4wc2VHOk&callback=initMap&v=weekly"
-      defer
-    ></script>
 
-  </body>
+
+  <div class="history">
+    <div class="section">
+      <div class="time-date">
+        <p>20/10/2022</p>
+      </div>
+      <h3>Everest</h3>
+      <div class="distance-information">
+        <div class="icon-data">
+          <i class="fa-sharp fa-solid fa-road"></i>
+          <p>12 km</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-regular fa-clock"></i>
+          <p>1:00</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-brands fa-free-code-camp"></i>
+          <p>320 kcal</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="time-date">
+        <p>20/10/2022</p>
+      </div>
+      <h3>VAL THORENS</h3>
+      <div class="distance-information">
+        <div class="icon-data">
+          <i class="fa-sharp fa-solid fa-road"></i>
+          <p>11.5 km</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-regular fa-clock"></i>
+          <p>2:00</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-brands fa-free-code-camp"></i>
+          <p>360 kcal</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="time-date">
+        <p>20/10/2022</p>
+      </div>
+      <h3>CHALET LES ANGES</h3>
+      <div class="distance-information">
+        <div class="icon-data">
+          <i class="fa-sharp fa-solid fa-road"></i>
+          <p>10km</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-regular fa-clock"></i>
+          <p>3:00</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-brands fa-free-code-camp"></i>
+          <p>320 kcal</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="time-date">
+        <p>20/10/2022</p>
+      </div>
+      <h3>W VERBIER</h3>
+      <div class="distance-information">
+        <div class="icon-data">
+          <i class="fa-sharp fa-solid fa-road"></i>
+          <p>15 km</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-regular fa-clock"></i>
+          <p>4:50</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-brands fa-free-code-camp"></i>
+          <p>360 kcal</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="time-date">
+        <p>20/10/2022</p>
+      </div>
+      <h3>LAKE LOUISE</h3>
+      <div class="distance-information">
+        <div class="icon-data">
+          <i class="fa-sharp fa-solid fa-road"></i>
+          <p>16 km</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-regular fa-clock"></i>
+          <p>1:20</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-brands fa-free-code-camp"></i>
+          <p>390 kcal</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="time-date">
+        <p>20/10/2022</p>
+      </div>
+      <h3>DEER VALLEY</h3>
+      <div class="distance-information">
+        <div class="icon-data">
+          <i class="fa-sharp fa-solid fa-road"></i>
+          <p>9 km</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-regular fa-clock"></i>
+          <p>3:30</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-brands fa-free-code-camp"></i>
+          <p>300 kcal</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="time-date">
+        <p>20/10/2022</p>
+      </div>
+      <h3>RUSUTSU</h3>
+      <div class="distance-information">
+        <div class="icon-data">
+          <i class="fa-sharp fa-solid fa-road"></i>
+          <p>10 km</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-regular fa-clock"></i>
+          <p>1:25</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-brands fa-free-code-camp"></i>
+          <p>320 kcal</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="time-date">
+        <p>20/10/2022</p>
+      </div>
+      <h3>Titlis</h3>
+      <div class="distance-information">
+        <div class="icon-data">
+          <i class="fa-sharp fa-solid fa-road"></i>
+          <p>13.5 km</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-regular fa-clock"></i>
+          <p>2:35</p>
+        </div>
+        <div class="icon-data">
+          <i class="fa-brands fa-free-code-camp"></i>
+          <p>320 kcal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx0BLLb64KGVX2Einy0LTPKW_4wc2VHOk&callback=initMap&v=weekly"
+    defer></script>
+
+</body>
 
 </html>
 
-<script type="module" src="/map.js"></script>
+<script type="module" src="/js/map.js"></script>

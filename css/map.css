@@ -1,4 +1,80 @@
 #map {
-    height: 400px;
+  height: 400px;
+  width: 90%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+/* .map-nav-center {
+  display: flex;
+  justify-content: center;
+} */
+
+.map-nav-center a {
+  color: white;
+}
+
+.history {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 23%;
+  margin: 10px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.section h3 {
+  margin: 5px;
+  text-align: center;
+}
+
+.time-date p {
+  padding: 20px;
+}
+
+.distance-information {
+  padding: 20px;
+}
+
+.icon-data {
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .section {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .section {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 599px) {
+  .section {
     width: 80%;
   }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .section {
+    width: 80%;
+  }
+}
